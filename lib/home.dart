@@ -151,7 +151,7 @@ class _MyHomeState extends State<MyHome> {
                                 ),*/
                               ),  
                               SizedBox(height: 15,),
-                            GestureDetector( 
+                           /* GestureDetector( 
                                  
                                  child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
@@ -200,7 +200,7 @@ class _MyHomeState extends State<MyHome> {
                                      // fontWeight: FontWeight.bold,
                                       fontSize: 20),
                                 ),*/
-                              ),
+                              ),*/
                           ]) 
             ) 
             )

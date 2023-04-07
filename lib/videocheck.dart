@@ -1,6 +1,9 @@
+
+
+
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-
+import 'package:image_picker/image_picker.dart'; 
 main(){
   runApp(MyApp());
 }
@@ -20,9 +23,9 @@ class Home extends StatefulWidget{
 }
 
 class _HomeState extends State<Home> {
-  
-  late VideoPlayerController controller;
-
+late VideoPlayerController controller;
+ 
+final picker = ImagePicker();
   @override
   void initState() {
     loadVideoPlayer();
@@ -64,8 +67,8 @@ class _HomeState extends State<Home> {
                         controller, 
                         allowScrubbing: true,
                         colors:VideoProgressColors(
-                            backgroundColor: Colors.redAccent,
-                            playedColor: Colors.green,
+                            backgroundColor: Colors.purple,
+                            playedColor: Colors.purple,
                             bufferedColor: Colors.purple,
                         )
                       )
