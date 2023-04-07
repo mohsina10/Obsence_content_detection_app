@@ -138,7 +138,7 @@ class _MyHomeState extends State<MyHome> {
                   ),
                                 onTap: () {
                                   Navigator.push(context,MaterialPageRoute(
-                                   builder: (context) => MyApp(),
+                                   builder: (context) => Home(),
                                   ),
                                     );
                                 },

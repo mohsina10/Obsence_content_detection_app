@@ -9,7 +9,7 @@ class VideoPlayerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'GeeksForGeeks',
+      title: 'Videos',
       home: VideoPlayerScreen(),
     );
   }
@@ -28,8 +28,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
  
   @override
   void initState() {
-    _controller = VideoPlayerController.network(
-      'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
+    _controller = VideoPlayerController.asset(
+      'assets/videos/Butterfly.mp4',
     );
     _initializeVideoPlayerFuture = _controller.initialize();
  
@@ -49,8 +49,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('GeeksForGeeks'),
-        backgroundColor: Colors.green,
+        title: Text('Videos'),
+        backgroundColor: Colors.purple,
       ),
       body: FutureBuilder(
         future: _initializeVideoPlayerFuture,
@@ -65,7 +65,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
           }
         },
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton( 
+        backgroundColor: Colors.purple,
         onPressed: () {
           setState(() {
             // pause

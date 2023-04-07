@@ -80,7 +80,10 @@ flutter:
    - assets/images/temp3.jpg 
    - assets/images/temp4.jpg 
    - assets/images/temp5.jpg
-   - assets/images/temp6.jpg
+   - assets/images/temp6.jpg 
+   - assets/videos/Butterfly.mp4 
+   - assets/videos/video1.mp4
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
